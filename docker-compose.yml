@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: rbac
+    environment:
+      POSTGRES_USER: karan
+      POSTGRES_PASSWORD: karan12345
+      POSTGRES_DB: school
+    ports:
+      - '5431:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    container_name: nextjs_app
+    ports:
+      - '3000:3000'
+    environment:
+      DATABASE_URL: postgresql://karan:karan12345@postgres:5432/school
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:

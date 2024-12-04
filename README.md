@@ -52,7 +52,7 @@ Use the following credentials to test different user roles:
 ## ⚙️ Technologies Used
 
 - **Frontend**: React, Next.js, TypeScript
-- **Database**: Supabase (PostgreSQL)
+- **Database**: Superbase (PostgreSQL)
 
 ## 💡 Project Highlights
 

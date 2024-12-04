@@ -3,13 +3,13 @@ version: '3.8'
 services:
   postgres:
     image: postgres:latest
-    container_name: rbac
+    container_name: postgres_db
     environment:
-      POSTGRES_USER: karan
-      POSTGRES_PASSWORD: karan12345
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
       POSTGRES_DB: school
     ports:
-      - '5431:5432'
+      - '5432:5432'
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
@@ -19,7 +19,7 @@ services:
     ports:
       - '3000:3000'
     environment:
-      DATABASE_URL: postgresql://karan:karan12345@postgres:5432/school
+      DATABASE_URL: postgresql://myuser:mypassword@postgres:5432/school
     depends_on:
       - postgres
 

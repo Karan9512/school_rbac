@@ -59,5 +59,3 @@ Use the following credentials to test different user roles:
 This dashboard employs **Role-Based Access Control (RBAC)** to ensure each user has a tailored experience, enhancing both security and usability. The integration of Supabase provides a powerful backend for data management, ensuring efficiency and scalability.
 
 ---
-
-Feel free to customize further based on your preferences! 😊

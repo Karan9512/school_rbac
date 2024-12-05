@@ -53,6 +53,7 @@ Use the following credentials to test different user roles:
 
 - **Frontend**: React, Next.js, TypeScript
 - **Database**: Superbase (PostgreSQL)
+- **Schema**: Prisma (ORM)
 
 ## 💡 Project Highlights
 
